@@ -1,21 +1,39 @@
 <?xml version="1.0"?>
 <package>
     <name>Shopgo_SkynetShipping</name>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
     <channel>community</channel>
     <extends/>
     <summary>SkyNet Worldwide Express allows to do SkyNet rate calculation and shipment creation easily inside Magento.</summary>
-    <description>&lt;p&gt;SkyNet Worldwide Express is a shipping module that allows customers to do SkyNet rate calculation and shipment creation easily inside Magento website.&lt;/p&gt;&#xD;
-&lt;p&gt;Full tracking, shipping labels printing and pickups creation features will be added in future releases.&lt;/p&gt;&#xD;
-You could also get the latest version of the module from:&#xD;
-&lt;a href="https://github.com/shopgo-me/skynet-shipping.git"&gt;https://github.com/shopgo-me/skynet-shipping.git&lt;/a&gt;</description>
-    <notes>The first release of SkyNet Worldwide Express module.</notes>
+    <description>&lt;p&gt;SkyNet Worldwide Express is a courier company with a network that stretches across 7 continents, providing the Global business community with fast, reliable and secure Express delivery services to over 209 countries and territories Worldwide.&lt;/p&gt;&#xD;
+&lt;h3&gt;How does it work?&lt;/h3&gt;&#xD;
+&lt;p&gt;This module integrates Magento with SkyNet Worldwide Express API, making it easier for customers to calculate SkyNet rates on Magento websites (e.g. Checkout page), and more automated.&lt;br /&gt;&#xD;
+It also makes it easier for store owners to ship placed orders via SkyNet.&lt;/p&gt;&#xD;
+&lt;h3&gt;Features&lt;/h3&gt;&#xD;
+&lt;ul&gt;&#xD;
+    &lt;li&gt;SkyNet rates calculator.&lt;/li&gt;&#xD;
+    &lt;li&gt;SkyNet shipments creation.&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;h3&gt;Dependencies&lt;/h3&gt;&#xD;
+&lt;ul&gt;&#xD;
+    &lt;li&gt;ShopGo Core&lt;/li&gt;&#xD;
+    &lt;li&gt;(ShopGo) Advanced Ifconfig&lt;/li&gt;&#xD;
+    &lt;li&gt;ShopGo Shipping Core&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;h3&gt;Notes&lt;/h3&gt;&#xD;
+&lt;ul&gt;&#xD;
+    &lt;li&gt;Full tracking, shipping labels printing and pickups creation features will be added in future releases.&lt;/li&gt;&#xD;
+    &lt;li&gt;Make sure that all dependencies mentioned above are installed before installing this module. Otherwise, it won't work.&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;p&gt;&lt;strong&gt;You could also get the latest version of this module from:&lt;/strong&gt;&lt;br /&gt;&#xD;
+&lt;a href="https://github.com/shopgo-magento1/skynet-shipping.git"&gt;https://github.com/shopgo-magento1/skynet-shipping.git&lt;/a&gt;&lt;/p&gt;</description>
+    <notes>Fix SkyNet service list save issue</notes>
     <authors><author><name>ShopGo</name><user>ShopGo</user><email>support@shopgo.me</email></author></authors>
-    <date>2015-07-10</date>
-    <time>01:18:25</time>
-    <contents><target name="magecommunity"><dir name="Shopgo"><dir name="SkynetShipping"><dir name="Block"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><dir name="Shipment"><dir name="Create"><dir name="Form"><file name="Abstract.php" hash="e8799fc3361537948eacce935043bf14"/><file name="Shipment.php" hash="fb84f878fde877056864f5280644a216"/></dir></dir></dir></dir></dir><dir name="System"><dir name="Config"><dir name="Form"><file name="ServiceListButton.php" hash="e5d0702c85016561e3ea4af38ba5f9fb"/><file name="VerifyAccountButton.php" hash="d7c07c1fe8d3eb96c76bd9d1c531cd8f"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="3d35a227b6bfeecc86dee03f756f7f58"/></dir><dir name="Model"><dir name="Carrier"><file name="Skynet.php" hash="ebf2f358f8170d3d174f6119fdc107c1"/></dir><dir name="Resource"><dir name="Service"><file name="Collection.php" hash="b63e98f9171aaa09de46e08746803e9a"/></dir><file name="Service.php" hash="6c91083cfefc36f51fa3feb7d3675fd7"/></dir><file name="Service.php" hash="985ca70df79471992e0c499266cb87ff"/><dir name="Shipment"><dir name="Source"><file name="Typeofshipment.php" hash="b8f58fb33bf79a2ad833dec1e639948d"/></dir></dir><file name="Shipment.php" hash="5efa6ba625929e22b7ad4f3895b47858"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Service.php" hash="834d5888d87ad38bb1146b3667890d58"/></dir></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="SkynetController.php" hash="023b507ba379f2e0bb33b517912e95fb"/></dir></dir><dir name="etc"><file name="config.xml" hash="c16a16aa20e900820e53609630eb7a3d"/><file name="system.xml" hash="7d84ba307e0f958a0c769934aa233d6a"/></dir><dir name="sql"><dir name="skynetshipping_setup"><file name="mysql4-install-1.0.0.php" hash="e5ade6d196777a4b32a23ed998baebbc"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="shopgo"><file name="skynet_shipping.xml" hash="c871e625bfb49e1bd35a1d4f3e9d3de4"/></dir></dir><dir name="template"><dir name="shopgo"><dir name="skynet_shipping"><dir name="sales"><dir name="order"><dir name="shipment"><dir name="create"><dir name="form"><file name="shipment.phtml" hash="9d6ab95235328cde24787cfd2994e8a8"/></dir></dir></dir></dir></dir><dir name="system"><dir name="config"><file name="service_list_button.phtml" hash="e9833dbe433f5eef9387a07d1764c6b7"/><file name="verify_account_button.phtml" hash="6bad73f6bbfac741f80be7bde6b252cd"/></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Shopgo_SkynetShipping.xml" hash="4f43294a53ee8ea3d0e825b7c93ce5d2"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="shopgo"><dir name="skynet_shipping"><dir name="sales"><dir name="order"><dir name="shipment"><dir name="create"><dir name="form"><dir name="css"><file name="main.css" hash="6df04f2008a3fe635c9d40a2bbde272b"/><file name="shipment.css" hash="ee66afde21b13a8d8b7c89c17573a4a1"/></dir></dir></dir></dir></dir></dir></dir></dir></dir></dir></dir></target></contents>
+    <date>2016-06-06</date>
+    <time>11:54:19</time>
+    <contents><target name="magecommunity"><dir name="Shopgo"><dir name="SkynetShipping"><dir name="Block"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><dir name="Shipment"><dir name="Create"><dir name="Form"><file name="Abstract.php" hash="e8799fc3361537948eacce935043bf14"/><file name="Shipment.php" hash="fb84f878fde877056864f5280644a216"/></dir></dir></dir></dir></dir><dir name="System"><dir name="Config"><dir name="Form"><file name="ServiceListButton.php" hash="e5d0702c85016561e3ea4af38ba5f9fb"/><file name="VerifyAccountButton.php" hash="d7c07c1fe8d3eb96c76bd9d1c531cd8f"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="3d35a227b6bfeecc86dee03f756f7f58"/></dir><dir name="Model"><dir name="Carrier"><file name="Skynet.php" hash="ebf2f358f8170d3d174f6119fdc107c1"/></dir><dir name="Resource"><dir name="Service"><file name="Collection.php" hash="b63e98f9171aaa09de46e08746803e9a"/></dir><file name="Service.php" hash="6c91083cfefc36f51fa3feb7d3675fd7"/></dir><file name="Service.php" hash="69cb34a8d7192481aedbb32759c8f43f"/><dir name="Shipment"><dir name="Source"><file name="Typeofshipment.php" hash="b8f58fb33bf79a2ad833dec1e639948d"/></dir></dir><file name="Shipment.php" hash="5efa6ba625929e22b7ad4f3895b47858"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Service.php" hash="834d5888d87ad38bb1146b3667890d58"/></dir></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="SkynetController.php" hash="023b507ba379f2e0bb33b517912e95fb"/></dir></dir><dir name="etc"><file name="config.xml" hash="dd805b5a92220778cd77fb23f716d763"/><file name="system.xml" hash="7d84ba307e0f958a0c769934aa233d6a"/></dir><dir name="sql"><dir name="skynetshipping_setup"><file name="mysql4-install-1.0.0.php" hash="e5ade6d196777a4b32a23ed998baebbc"/></dir></dir></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="shopgo"><dir name="skynet_shipping"><dir name="sales"><dir name="order"><dir name="shipment"><dir name="create"><dir name="form"><dir name="css"><file name="main.css" hash="6df04f2008a3fe635c9d40a2bbde272b"/><file name="shipment.css" hash="ee66afde21b13a8d8b7c89c17573a4a1"/></dir></dir></dir></dir></dir></dir></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.3.0</min><max>7.0.0</max></php><package><name>Shopgo_Core</name><channel>community</channel><min>1.0.6</min><max/></package><package><name>Shopgo_ShippingCore</name><channel>community</channel><min>1.3.7</min><max/></package><package><name>Shopgo_AdvIfconfig</name><channel>community</channel><min>1.0.3</min><max/></package><package><name>Phoenix_CashOnDelivery</name><channel>community</channel><min>1.0.8</min><max/></package></required></dependencies>
+    <dependencies><required><php><min>5.3.0</min><max>5.6.0</max></php><package><name>Shopgo_Core</name><channel>community</channel><min>1.0.6</min><max/></package><package><name>Shopgo_AdvIfconfig</name><channel>community</channel><min>1.0.3</min><max/></package><package><name>Shopgo_ShippingCore</name><channel>community</channel><min>1.3.10</min><max/></package></required></dependencies>
 </package>
