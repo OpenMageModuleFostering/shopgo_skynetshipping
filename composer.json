@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Shopgo_SkynetShipping",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "SkyNet Worldwide Express allows to do SkyNet rate calculation and shipment creation easily inside Magento.",
+    "authors": [
+    {
+        "name": "ShopGo",
+        "email": "support@shopgo.me"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
